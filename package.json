@@ -1,0 +1,66 @@
+{
+  "name": "@useveiled/sdk",
+  "version": "0.1.1",
+  "description": "Typed TypeScript client for the Veiled API on Solana: send confidential USDG transfers, give AI agents accounts with spend limits, and verify signed webhooks. Works in Node 18+, browsers and edge runtimes.",
+  "license": "MIT",
+  "homepage": "https://useveiled.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/useveiled/sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/useveiled/sdk/issues"
+  },
+  "author": "Veiled <contact@useveiled.com> (https://useveiled.com)",
+  "keywords": [
+    "veiled",
+    "solana",
+    "privacy",
+    "confidential-transfers",
+    "usdg",
+    "stablecoin",
+    "payments",
+    "ai-agents",
+    "agent-payments",
+    "spend-limits",
+    "webhooks",
+    "api-client",
+    "typescript",
+    "sdk"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vitest": "^4.1.10"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
+}
