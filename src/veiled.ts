@@ -17,7 +17,7 @@ export interface VeiledOptions {
   /**
    * The secret key used to authenticate every call. A key starting with
    * `vl_test_` talks to Solana devnet; any other key (normally `vl_live_`)
-   * is treated as mainnet. Load it from configuration or an environment
+   * is treated live. Load it from configuration or an environment
    * variable instead of committing it to source.
    */
   apiKey: string;

@@ -74,7 +74,7 @@ Requests authenticate with a bearer API key that you create on the **API Keys** 
 
 | Prefix | Network | `veiled.environment` |
 |---|---|---|
-| `vl_live_` | Solana mainnet, real USDG | `"live"` |
+| `vl_live_` | Solana, real USDG | `"live"` |
 | `vl_test_` | Solana devnet, no real funds | `"test"` |
 
 ```ts
